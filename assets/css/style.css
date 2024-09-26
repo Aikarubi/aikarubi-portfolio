@@ -850,7 +850,7 @@ h2 {
 .form-group textarea {
     width: 100%;
     padding: 2rem; 
-    border: 2px solid var(--gris);
+    border: 2px solid var(--blancoHover);
     border-radius: 5px;
     background: none;
     font-size: 2rem; 
