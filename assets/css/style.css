@@ -583,3 +583,114 @@ svg {
     left: 50%;
     transform: translateX(-50%);
 }
+
+/* EXPERIENCIA */
+.experiencia {
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+h2 {
+    font-size: 3rem;
+    margin-bottom: 3rem;
+    color: var(--blanco);
+}
+
+/* Contenedor de línea de tiempo */
+.linea-tiempo {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 2rem;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2rem 0;
+    position: relative;
+}
+
+/* Cada evento (card) de la experiencia */
+.evento {
+    background-color: var(--tarjetaHover);
+    border-radius: 15px;
+    padding: 2.5rem;
+    width: 400px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.evento:hover {
+    transform: scale(1.05);
+}
+
+/* Imagen de la empresa */
+.evento img {
+    width: 150px;
+    height: auto;
+    margin-bottom: 1.5rem;
+    border-radius: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Títulos y texto del evento */
+.evento h3 {
+    font-size: 2.5rem; 
+    color: var(--primario);
+    margin-bottom: 0.5rem;
+}
+
+.evento p {
+    font-size: 1.5rem; 
+    color: var(--blanco);
+    margin-bottom: 1.5rem;
+}
+
+.evento span {
+    font-size: 1.3rem;
+    display: block;
+    color: var(--primarioHover);
+    margin-bottom: 1.5rem;
+}
+
+/* Estilo para el enlace */
+.evento a {
+    color: var(--primario);
+    font-size: 1.3rem;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.evento a:hover {
+    color: var(--primarioHover);
+}
+
+/* Estilo para la línea vertical entre las tarjetas */
+.linea {
+    width: 4px;
+    background-color: var(--primario);
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    z-index: -1;
+}
+
+/* Responsivo para pantallas pequeñas */
+@media (max-width: 768px) {
+    .linea-tiempo {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .evento {
+        width: 100%;
+    }
+    
+    .linea {
+        display: none;
+    }
+}
