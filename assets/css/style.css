@@ -90,3 +90,21 @@ img {
 .uppercase {
     text-transform: uppercase;
 }
+
+/* MAIN */
+
+@media (min-width: 768px) {
+    .contenido {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 4rem;
+        height: 40rem;
+        margin-top: 10rem;
+    }
+}
+
+.contenido_imagen {
+    text-align: center;
+    margin-top: 2.2rem;
+    border-radius: 50px;
+}
