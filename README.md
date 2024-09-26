@@ -4,7 +4,7 @@
 
 ### 🚧 Estado Actual
 
-El portfolio se encuentra en desarrollo, actualmente estoy usando un servicio para el apartado de contacto, y me gustaría hacer yo mi propio servicio usando PHP, además hay algunas secciones de la web que considero que necesitan una mejora.
+El portfolio se encuentra en desarrollo, actualmente estoy usando un servicio para el apartado de contacto, y me gustaría hacer mi propio servicio usando PHP, además hay algunas secciones de la web que considero que necesitan una mejora.
 
 ### ✨ Características
 
@@ -12,6 +12,10 @@ El portfolio se encuentra en desarrollo, actualmente estoy usando un servicio pa
 - **Tecnologías Usadas**: Sección dedicada a las tecnologías y herramientas que manejo.
 - **Responsive**: El portfolio se visualiza bien en cualquier tipo de dispositivo.
 - **Sobre Mí**: Información sobre mi experiencia, educación y objetivos profesionales.
+
+### 📧 Servicio de Correo
+
+Para el envío de correos en el apartado de contacto, estoy utilizando **[Formspree]**. Este servicio facilita la gestión y el envío de mensajes, permitiendo que los usuarios se pongan en contacto conmigo fácilmente.
 
 ### 🔧 Tecnologías Usadas
 
