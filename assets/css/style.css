@@ -227,3 +227,26 @@ img {
         width: 30rem;
     }
 }
+
+/*TEXTO*/
+
+.contenido-texto {
+    margin-top: 4rem;
+}
+
+@media (min-width: 768px) {
+    .contenido-texto {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 4rem;
+        margin-top: 4rem;
+    }
+}
+
+.texto {
+    color: var(--blanco);
+}
+
+svg {
+    margin-bottom: -2rem;
+}
