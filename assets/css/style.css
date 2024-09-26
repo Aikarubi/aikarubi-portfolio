@@ -460,3 +460,126 @@ svg {
         max-width: 100%;
     }
 }
+
+/* TECNOLOGIAS */
+
+.tecnologias h2,
+.tecnologias h3 {
+    text-align: center;
+    color: var(--blanco);
+    padding-top: 4rem;
+    margin-bottom: 1rem;
+}
+
+@media (min-width: 768px) {
+
+    .tecnologias h2,
+    .tecnologias h3 {
+        padding-top: 0;
+        font-size: 3rem !important;
+    }
+}
+
+.tecnologias .contenedor {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 2rem;
+    color: var(--blanco);
+}
+
+@media (min-width: 768px) { 
+    .tecnologias .contenedor {
+        max-width: 1200px;
+        padding: 3rem;
+    }
+}
+
+.grid-tecnologias {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 2rem;
+    justify-items: center;
+    align-items: center;
+}
+
+@media (min-width: 768px) {
+    .grid-tecnologias {
+        grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+        gap: 3rem;
+    }
+}
+
+.tecnologia {
+    background-color: var(--gris);
+    padding: 1.5rem;
+    border-radius: 15px;
+    text-align: center;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 150px;
+}
+
+@media (min-width: 768px) {
+    .tecnologia {
+        padding: 2rem;
+        border-radius: 20px;
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        max-width: 180px;
+    }
+}
+
+.tecnologia img {
+    max-width: 60px;
+    margin-bottom: 1rem;
+}
+
+@media (min-width: 768px) { 
+    .tecnologia img {
+        max-width: 80px;
+        margin-bottom: 1.5rem;
+    }
+}
+
+.tecnologia p {
+    font-size: 1.4rem;
+}
+
+@media (min-width: 768px) {
+    .tecnologia p {
+        font-size: 1.6rem;
+    }
+}
+
+.tecnologia:hover {
+    transform: translateY(-5px);
+    background-color: var(--tarjetaHover);
+}
+
+/* Estilo de separador para cada sección */
+.categoria {
+    margin-top: 4rem;
+}
+
+@media (min-width: 768px) {
+    .categoria {
+        margin-top: 5rem;
+    }
+}
+
+.categoria h3 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.categoria h3::after {
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 4px;
+    background: var(--primario);
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
