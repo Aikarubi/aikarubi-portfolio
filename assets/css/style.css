@@ -108,3 +108,122 @@ img {
     margin-top: 2.2rem;
     border-radius: 50px;
 }
+
+/*ENLACES*/
+
+.contenido_enlaces {
+    display: grid;
+    place-items: center;
+    height: 100%;
+    gap: 2rem;
+}
+
+@media (min-width: 768px) {
+    .contenido_enlaces {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        flex-wrap: wrap;
+        height: 100%;
+        padding: 2rem;
+    }
+}
+
+.enlace {
+    background-color: var(--blanco);
+    color: var(--negro);
+    font-weight: 900;
+    text-align: center;
+    font-size: 2.2rem;
+    padding: 0.8rem;
+    text-decoration: none;
+    display: inline-block;
+    border: 4px solid var(--blanco);
+    transition: ease 0.5s;
+
+}
+
+@media (min-width: 768px) {
+    .enlace {
+        font-size: 2.5rem;
+        padding: 1rem;
+        display: inline-block;
+    }
+}
+
+.enlace:hover {
+    background-color: var(--negroHover);
+    color: var(--blancoHover);
+    border: 4px solid var(--negroHover);
+}
+
+.enlace--primario {
+    color: var(--blanco);
+    background-color: var(--primario);
+
+    border: 4px solid var(--primario);
+}
+
+.enlace--primario:hover {
+    background-color: var(--primarioHover);
+    color: var(--blancoHover);
+    border: 4px solid var(--primarioHover);
+}
+
+.enlace--secundario {
+    color: var(--blanco);
+    background-color: var(--secundario);
+    border: 4px solid var(--secundario);
+}
+
+.enlace--secundario:hover {
+    background-color: var(--secundarioHover);
+    color: var(--blancoHover);
+    border: 4px solid var(--secundarioHover);
+}
+
+.enlace--bordes {
+    border: 4px solid var(--blanco);
+    background-color: transparent;
+    color: var(--blanco);
+}
+
+.enlace--bordes:hover {
+    background-color: transparent;
+    color: var(--negro);
+    border: 4px solid var(--negro);
+}
+
+.enlace-cv {
+    background-color: var(--negro);
+    color: var(--blanco);
+    border: 4px solid var(--negro);
+}
+
+.enlace-cv:hover {
+    background-color: var(--blancoHover);
+    color: var(--negroHover);
+    border: 4px solid var(--blancoHover);
+}
+
+
+.enlace--1,
+.enlace--2,
+.enlace--3 {
+    width: 30rem;
+}
+
+@media (min-width: 768px) {
+    .enlace--1 {
+        width: 20rem;
+    }
+
+    .enlace--2 {
+        width: 25rem;
+    }
+
+    .enlace--3 {
+        width: 30rem;
+    }
+}
