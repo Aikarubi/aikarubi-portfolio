@@ -6,13 +6,15 @@
     --primarioHover: #c72e4a;
     --secundario: #9340FF;
     --secundarioHover: #6515ce;
+    --terciario: #3ADB93;
+    --terciarioHover: #2CAC6F;
     --fondo: #101728;
     --fondoDegradado: #293D70;
-    --blanco: #F4F4F4;
+    --blanco: #f4f4f4;
     --blancoHover: #ffffff;
     --blancoTransparente: #f4f4f436;
     --negro: #0F1819;
-    --negroHover: #111b1d;
+    --negroHover: #050607;
 }
 
 html {
@@ -130,15 +132,15 @@ img {
 }
 
 .enlace {
-    background-color: var(--blanco);
-    color: var(--negro);
+    background-color: var(--negro);
+    color: var(--blanco);
     font-weight: 900;
     text-align: center;
     font-size: 2.2rem;
     padding: 0.8rem;
     text-decoration: none;
     display: inline-block;
-    border: 4px solid var(--blanco);
+    border: 4px solid var(--negro);
     transition: ease 0.5s;
 
 }
@@ -183,27 +185,27 @@ img {
 }
 
 .enlace--bordes {
-    border: 4px solid var(--blanco);
+    border: 4px solid var(--negro);
     background-color: transparent;
-    color: var(--blanco);
+    color: var(--negro);
 }
 
 .enlace--bordes:hover {
     background-color: transparent;
-    color: var(--negro);
-    border: 4px solid var(--negro);
+    color: var(--negroHover);
+    border: 4px solid var(--negroHover);
 }
 
 .enlace-cv {
-    background-color: var(--negro);
+    background-color: var(--terciario);
     color: var(--blanco);
-    border: 4px solid var(--negro);
+    border: 4px solid var(--terciario);
 }
 
 .enlace-cv:hover {
-    background-color: var(--blancoHover);
-    color: var(--negroHover);
-    border: 4px solid var(--blancoHover);
+    background-color: var(--terciarioHover);
+    color: var(--blanco);
+    border: 4px solid var(--terciarioHover);
 }
 
 
@@ -246,6 +248,7 @@ img {
     color: var(--negro);
 }
 
+/* Color Verde: 58, 219, 147, 1, Color Morado: 147, 64, 255, 1 */
 svg {
     margin-bottom: -2rem;
 }
