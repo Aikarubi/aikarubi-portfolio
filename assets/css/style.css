@@ -265,7 +265,7 @@ svg {
         padding: 2rem;
         position: relative;
     }
-}
+}*/
 
 .boton-volver {
     position: absolute;
@@ -284,7 +284,7 @@ svg {
 .boton-volver:hover {
     background-position: right;
 }
-
+/*
 .imagen-sobre-mi {
     margin-top: 10rem;
     max-width: 100%;
