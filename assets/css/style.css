@@ -254,7 +254,7 @@ svg {
 }
 
 /* SOBRE MI */
-
+/*
 @media (min-width: 768px) {
     .sobre-mi {
         display: grid;
@@ -461,7 +461,100 @@ svg {
         padding: 1rem 2rem;
         max-width: 100%;
     }
+}*/
+/* CONTENEDOR PRINCIPAL */
+.sobre-mi {
+    display: grid;
+    grid-template-rows: auto auto auto auto;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 2rem;
+    height: 100vh; /* Ocupa toda la pantalla */
+    box-sizing: border-box;
+    background: linear-gradient(to bottom, #ffffff, #f4f4f4);
 }
+
+/* CONTENEDOR */
+.sobre-mi__contenedor {
+    display: grid;
+    grid-template-rows: auto auto auto auto;
+    grid-template-columns: 1fr;
+    text-align: center;
+    align-items: center;
+    justify-items: center;
+    gap: 2rem;
+}
+
+/* FOTO */
+.sobre-mi__imagen img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    object-fit: cover;
+}
+
+/* INFORMACIÓN PERSONAL */
+.sobre-mi__informacion h1 {
+    font-size: 2.5rem;
+    color: #4C75F2;
+    margin-bottom: 1rem;
+}
+
+.sobre-mi__informacion p {
+    font-size: 1.4rem;
+    line-height: 1.8;
+    color: #333;
+    max-width: 600px;
+}
+
+/* INTERESES */
+.sobre-mi__intereses h2 {
+    font-size: 2rem;
+    color: #FF3C5F;
+    margin-bottom: 1rem;
+}
+
+.sobre-mi__intereses ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    padding: 0;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.sobre-mi__intereses li {
+    font-size: 1.2rem;
+    padding: 0.5rem 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
+    background: rgba(0, 0, 0, 0.05);
+}
+
+/* TECNOLOGÍAS */
+.sobre-mi__tecnologias h2 {
+    font-size: 2rem;
+    color: #00BFA6;
+    margin-bottom: 1rem;
+}
+
+.tecnologias__lista {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.tecnologias__lista span {
+    background: linear-gradient(90deg, #FF3C5F, #9340FF);
+    color: #fff;
+    padding: 0.6rem 1.2rem;
+    font-size: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+}
+
 
 /* TECNOLOGIAS */
 

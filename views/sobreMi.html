@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,37 +11,53 @@
     <link rel="icon" type="image/x-icon" href="../favicon.ico">
 </head>
 
-<body style="background-image: linear-gradient(to top, lightgrey 0%, #d9d9d9 100%);">
-    <div class="sobre-mi">
-        <a href="../index.html" class="boton-volver">← Volver</a>
+<body>
+    <section class="sobre-mi">
+        <div class="sobre-mi__contenedor">
+            <div class="sobre-mi__perfil">
+                <a href="../index.html" class="boton-volver">← Volver</a>
+                <!-- Foto e Información -->
+                <div class="sobre-mi__imagen">
+                    <img src="/assets/img/yo.jpg" alt="Foto de Nerea Rubio">
+                </div>
 
-        <!-- Bloque Imagen -->
-        <div class="bloque-imagen">
-            <img src="/assets/img/yo.jpg" alt="Imagen sobre mí" class="imagen-sobre-mi">
-        </div>
-
-        <!-- Bloque Texto -->
-        <div class="bloque-texto">
-            <h1>Nerea Rubio</h1>
-            <p class="descripcion">Soy Nerea, una desarrolladora web Fullstack junior apasionada por la tecnología y la creación de soluciones eficientes. Me encanta aprender continuamente y enfrentarme a nuevos retos, ya que creo que cada desafío es una oportunidad para mejorar mis habilidades. Aunque a veces pueda resultar complicado, siempre persisto, poniendo todo mi esfuerzo para superar cualquier obstáculo y lograr resultados de calidad.</p>
-
-            <!-- Sección Intereses -->
-            <div class="intereses">
-                <h2>Intereses</h2>
-                <p>Me encanta leer, jugar videojuegos, viajar y pasar tiempo con los animales.</p>
+                <h1>Nerea Rubio</h1>
+            </div>
+            <div class="sobre-mi__descripcion">
+                <p>
+                    Soy una desarrolladora web Fullstack junior con pasión por la tecnología y los retos. Me encanta
+                    aprender y crear soluciones que combinan funcionalidad con un diseño atractivo. Aunque a veces
+                    me cueste, persisto hasta lograrlo.
+                </p>
             </div>
 
-            <!-- Sección Tecnologías -->
-            <div class="tecnologias">
-                <div class="tecnologias-lista">
-                    <span class="tecnologia-item">HTML</span>
-                    <span class="tecnologia-item">CSS</span>
-                    <span class="tecnologia-item">Symfony</span>
-                    <span class="tecnologia-item">Angular</span>
-                    <span class="tecnologia-item">Git</span>
+            <div class="sobre-mi__informacion">
+                <!-- Intereses -->
+                <div class="sobre-mi__intereses">
+                    <h2>Mis Intereses</h2>
+                    <ul>
+                        <li>📚 Leer</li>
+                        <li>🎮 Videojuegos</li>
+                        <li>✈️ Viajar</li>
+                        <li>🐾 Animales</li>
+                    </ul>
+                </div>
+
+                <!-- Tecnologías -->
+                <div class="sobre-mi__tecnologias">
+                    <h2>Tecnologías Principales</h2>
+                    <div class="tecnologias__lista">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                        <span>Angular</span>
+                        <span>Symfony</span>
+                        <span>PHP</span>
+                    </div>
                 </div>
             </div>
-        </div>
-    </div>
+    </section>
+
 </body>
+
 </html>
