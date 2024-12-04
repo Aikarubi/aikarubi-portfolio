@@ -469,9 +469,9 @@ svg {
     align-items: center;
     justify-content: center;
     padding: 3rem;
-    background: linear-gradient(to bottom, #ffffff, #f8f9fa);
     box-sizing: border-box;
     width: 100%;
+    height: 100vh
 }
 
 /* Contenedor Secundario */
@@ -483,6 +483,7 @@ svg {
     grid-template-columns: 1fr;
     gap: 3rem;
     text-align: center;
+
 }
 
 /* Perfil (Foto e Información) */
@@ -496,15 +497,18 @@ svg {
 .sobre-mi__imagen img {
     width: 180px;
     height: 180px;
-    border-radius: 50%;
+    border-radius: 8%;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     object-fit: cover;
 }
 
 .sobre-mi__perfil h1 {
-    font-size: 3rem;
-    color: #4C75F2;
+    margin-top: 0;
+    font-size: 7rem;
+    color: var(--negro);
     margin-bottom: 1rem;
+    text-transform: uppercase;
+    text-shadow: 0 2px 5px rgba(37, 0, 245, 0.205);
 }
 
 /* Descripción */
