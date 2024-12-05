@@ -396,16 +396,13 @@ svg {
     gap: 1.5rem;
 }
 
-
-
-
-
 /* TECNOLOGIAS */
 
 .tecnologias h2,
 .tecnologias h3 {
     text-align: center;
-    color: var(--blanco);
+    color: var(--negro);
+    text-shadow: 0 2px 5px rgba(37, 0, 245, 0.205);
     padding-top: 4rem;
     margin-bottom: 1rem;
 }
@@ -421,6 +418,7 @@ svg {
 
 .tecnologias .contenedor {
     max-width: 1100px;
+    height: 100vh;
     margin: 0 auto;
     padding: 2rem;
     color: var(--blanco);
@@ -449,7 +447,7 @@ svg {
 }
 
 .tecnologia {
-    background-color: var(--gris);
+    background-color: var(--negro);
     padding: 1.5rem;
     border-radius: 15px;
     text-align: center;
@@ -492,7 +490,7 @@ svg {
 
 .tecnologia:hover {
     transform: translateY(-5px);
-    background-color: var(--tarjetaHover);
+    background-color: var(--negroHover);
 }
 
 /* Estilo de separador para cada sección */
@@ -517,7 +515,7 @@ svg {
     position: absolute;
     width: 60px;
     height: 4px;
-    background: var(--primario);
+    background: rgba(17, 0, 116, 0.334);
     bottom: -10px;
     left: 50%;
     transform: translateX(-50%);
@@ -527,12 +525,14 @@ svg {
 .experiencia {
     padding: 4rem 2rem;
     text-align: center;
+    height: 100vh;
 }
 
 h2 {
     font-size: 3rem;
     margin-bottom: 3rem;
-    color: var(--blanco);
+    color: var(--negro);
+    text-shadow: 0 2px 5px rgba(37, 0, 245, 0.205);
 }
 
 /* Contenedor de línea de tiempo */
