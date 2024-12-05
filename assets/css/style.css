@@ -636,7 +636,7 @@ h2 {
 
 /*PROYECTOS*/
 
-#proyectos {
+/*#proyectos {
     padding: 4rem 0;
     text-align: center;
     color: var(--blanco);
@@ -725,6 +725,89 @@ h2 {
     .info-proyecto {
         flex: 1;
     }
+}
+*/
+
+/* Proyectos */
+#proyectos {
+    padding: 2rem;
+    text-align: center;
+    height: 100vh;
+}
+
+.grid-proyectos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+    padding: 1rem;
+}
+
+.proyecto {
+    background-color: #222222ec;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.proyecto:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.proyecto img {
+    width: 100%;
+    height: auto;
+}
+
+.proyecto h3 {
+    font-size: 2rem;
+    margin: 1rem 0;
+    color: var(--blanco);
+}
+
+.proyecto p {
+    padding: 0 1rem;
+    margin: 0 0 1rem;
+    font-size: 1.3rem;
+    color: var(--blanco);
+}
+
+.tecnologias-usadas {
+    padding: 0 1rem 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.tecnologias-usadas span {
+    background-color: var(--terciarioHover);
+    color: var(--blanco);
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    font-size: 1.2rem;
+}
+
+.botones {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.botones a {
+    text-decoration: none;
+    color: var(--blanco);
+    background-color: var(--terciario);
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.botones a:hover {
+    background-color: var(--terciarioHover);
 }
 
 /*CONTACTO*/
