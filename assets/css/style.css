@@ -528,7 +528,7 @@ svg {
     height: 100vh;
 }
 
-h2 {
+.experiencia h2 {
     font-size: 3rem;
     margin-bottom: 3rem;
     color: var(--negro);
@@ -635,101 +635,6 @@ h2 {
 }
 
 /*PROYECTOS*/
-
-/*#proyectos {
-    padding: 4rem 0;
-    text-align: center;
-    color: var(--blanco);
-}
-
-#proyectos h2 {
-    font-size: 3rem;
-    margin-bottom: 3rem;
-}
-
-.proyecto {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 4rem;
-    background-color: var(--gris);
-    border-radius: 15px;
-    padding: 2rem;
-    max-width: 1000px;
-    margin: 0 auto 4rem auto;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-.proyecto img {
-    width: 100%;
-    max-width: 400px;
-    border-radius: 10px;
-    margin-bottom: 2rem;
-}
-
-.info-proyecto h3 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-}
-
-.info-proyecto p {
-    font-size: 1.6rem;
-    margin-bottom: 1.5rem;
-}
-
-.tecnologias-usadas span {
-    background-color: var(--blancoTransparente);
-    color: var(--blanco);
-    padding: 0.5rem 1rem;
-    border-radius: 5px;
-    margin-right: 0.5rem;
-    font-size: 1.2rem;
-}
-
-.tecnologias-usadas {
-    margin-bottom: 1.5rem;
-}
-
-.btn-ver-codigo,
-.btn-demo,
-.btn-ver-sitio {
-    display: inline-block;
-    background-color: var(--primario);
-    color: var(--blanco);
-    padding: 1rem 2rem;
-    text-decoration: none;
-    border-radius: 5px;
-    margin-top: 1rem;
-    transition: background 0.3s ease;
-    margin-right: 1rem;
-    font-size: 1.4rem;
-}
-
-.btn-ver-codigo:hover,
-.btn-demo:hover,
-.btn-ver-sitio:hover {
-    background-color: var(--primarioHover);
-}
-
-@media (min-width: 768px) {
-    .proyecto {
-        flex-direction: row;
-        text-align: left;
-    }
-
-    .proyecto img {
-        margin-right: 2rem;
-        max-width: 300px;
-    }
-
-    .info-proyecto {
-        flex: 1;
-    }
-}
-*/
-
-/* Proyectos */
-/* Proyectos */
 #proyectos {
     padding: 2rem;
     text-align: center;
@@ -823,7 +728,8 @@ h2 {
 
 #contacto {
     padding: 6rem 2rem;
-    background: var(--gris);
+    background: -webkit-linear-gradient(50deg, #f0f0f0, #d9d9d9);
+    background: linear-gradient(50deg, #f0f0f0, #d9d9d9);
     color: var(--blanco);
     display: flex;
     justify-content: center;
