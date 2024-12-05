@@ -651,7 +651,7 @@ svg {
 }
 
 .proyecto {
-    background-color: #222222ec;
+    background-color: var(--blancoTransparente);
     border-radius: 15px;
     overflow: hidden;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Sombra más notoria */
@@ -675,14 +675,14 @@ svg {
 .proyecto h3 {
     font-size: 1.8rem;
     margin: 1rem 0;
-    color: var(--blanco);
+    color: var(--negro);
 }
 
 .proyecto p {
     padding: 0 1rem;
     margin: 0 0 1rem;
     font-size: 1.2rem;
-    color: var(--blanco);
+    color: var(--negro);
     line-height: 1.6; /* Mejor legibilidad */
 }
 
