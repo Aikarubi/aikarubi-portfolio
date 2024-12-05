@@ -271,7 +271,7 @@ svg {
     position: absolute;
     top: 2rem;
     left: 2rem;
-    background: linear-gradient(90deg, #FF3C5F, #9340FF);
+    background: linear-gradient(90deg, #081AA2, #8D56B8);
     color: var(--blanco);
     padding: 1rem 2rem;
     font-size: 1.6rem;
@@ -515,7 +515,7 @@ svg {
 .sobre-mi__descripcion p {
     font-size: 1.6rem;
     line-height: 1.8;
-    color: #333;
+    color: var(--negro);
     max-width: 800px;
     margin: 0 auto;
 }
@@ -534,8 +534,9 @@ svg {
 
 .sobre-mi__intereses h2 {
     font-size: 2.5rem;
-    color: #FF3C5F;
-    margin-bottom: 1rem;
+    color: var(--negro);
+    text-transform: uppercase;
+    text-shadow: 0 2px 5px rgba(37, 0, 245, 0.205);
 }
 
 .sobre-mi__intereses ul {
@@ -546,9 +547,12 @@ svg {
     padding: 0;
 }
 
-.sobre-mi__intereses li {
+.sobre-mi__intereses li, .tecnologias__lista span {
     font-size: 1.4rem;
     margin-bottom: 0.8rem;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    background: rgba(0, 0, 0, 0.05);
 }
 
 /* Tecnologías */
@@ -558,8 +562,9 @@ svg {
 
 .sobre-mi__tecnologias h2 {
     font-size: 2.5rem;
-    color: #00BFA6;
-    margin-bottom: 1rem;
+    color: var(--negro);
+    text-transform: uppercase;
+    text-shadow: 0 2px 5px rgba(37, 0, 245, 0.205);
 }
 
 .tecnologias__lista {
@@ -568,14 +573,7 @@ svg {
     gap: 1.5rem;
 }
 
-.tecnologias__lista span {
-    background: linear-gradient(90deg, #FF3C5F, #9340FF);
-    color: #fff;
-    padding: 0.8rem 1.5rem;
-    font-size: 1.2rem;
-    border-radius: 12px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
-}
+
 
 
 
