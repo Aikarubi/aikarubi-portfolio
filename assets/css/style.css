@@ -550,7 +550,7 @@ svg {
 
 /* Cada evento (card) de la experiencia */
 .evento {
-    background-color: #222222ec;
+    background-color: var(--terciario);
     border-radius: 15px;
     padding: 2.5rem;
     width: 400px;
@@ -590,26 +590,26 @@ svg {
 .evento span {
     font-size: 1.3rem;
     display: block;
-    color: var(--terciario);
+    color: var(--negro);
     margin-bottom: 1.5rem;
 }
 
 /* Estilo para el enlace */
 .evento a {
-    color: var(--terciario);
+    color: var(--negro);
     font-size: 1.3rem;
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 .evento a:hover {
-    color: var(--terciarioHover);
+    color: var(--negroHover);
 }
 
 /* Estilo para la línea vertical entre las tarjetas */
 .linea {
     width: 4px;
-    background-color: var(--terciario);
+    background-color: var(--terciarioHover);
     height: 100%;
     position: absolute;
     left: 50%;
