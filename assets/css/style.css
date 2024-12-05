@@ -729,40 +729,46 @@ h2 {
 */
 
 /* Proyectos */
+/* Proyectos */
 #proyectos {
     padding: 2rem;
     text-align: center;
-    height: 100vh;
+    max-width: 1200px; /* Limita el ancho de la sección */
+    margin: 0 auto; /* Centra la sección */
 }
 
 .grid-proyectos {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); /* Ajusta el tamaño mínimo de las tarjetas */
+    gap: 3rem; /* Más espacio entre proyectos */
     margin-top: 2rem;
-    padding: 1rem;
+    padding: 0 2rem; /* Añade margen interno a los lados */
 }
 
 .proyecto {
     background-color: #222222ec;
-    border-radius: 10px;
+    border-radius: 15px;
     overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Sombra más notoria */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 1rem; /* Añade espacio interno dentro de cada tarjeta */
 }
 
 .proyecto:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    transform: translateY(-8px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25); /* Realza la sombra al hacer hover */
 }
 
 .proyecto img {
     width: 100%;
     height: auto;
+    border-bottom: 2px solid var(--terciario); /* Pequeño detalle decorativo */
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
 }
 
 .proyecto h3 {
-    font-size: 2rem;
+    font-size: 1.8rem;
     margin: 1rem 0;
     color: var(--blanco);
 }
@@ -770,8 +776,9 @@ h2 {
 .proyecto p {
     padding: 0 1rem;
     margin: 0 0 1rem;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     color: var(--blanco);
+    line-height: 1.6; /* Mejor legibilidad */
 }
 
 .tecnologias-usadas {
@@ -779,13 +786,13 @@ h2 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 0.5rem;
+    gap: 1rem; /* Más espacio entre etiquetas */
 }
 
 .tecnologias-usadas span {
     background-color: var(--terciarioHover);
     color: var(--blanco);
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 1.2rem;
     border-radius: 5px;
     font-size: 1.2rem;
 }
@@ -793,21 +800,23 @@ h2 {
 .botones {
     display: flex;
     justify-content: center;
-    gap: 1rem;
-    margin-bottom: 1rem;
+    gap: 1.5rem; /* Más espacio entre botones */
+    margin-top: 1rem;
 }
 
 .botones a {
     text-decoration: none;
     color: var(--blanco);
     background-color: var(--terciario);
-    padding: 0.5rem 1rem;
+    padding: 0.7rem 1.5rem;
     border-radius: 5px;
-    transition: background-color 0.3s ease;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 .botones a:hover {
     background-color: var(--terciarioHover);
+    transform: scale(1.05); /* Efecto sutil de aumento */
 }
 
 /*CONTACTO*/
