@@ -275,6 +275,13 @@ svg {
     transition: background-position 1.5s ease;
 }
 
+@media (max-width: 768px) {
+    .boton-volver {
+    left: 3.6rem;
+} 
+    
+}
+
 .boton-volver:hover {
     background-position: right;
 }
@@ -449,6 +456,13 @@ svg {
     gap: 1.5rem;
 }
 
+@media (max-width: 768px) {
+    .tecnologias__lista {
+    margin-bottom: 2rem;
+} 
+    
+}
+
 
 /* TECNOLOGIAS */
 
@@ -561,6 +575,12 @@ svg {
     margin-bottom: 3rem;
     color: var(--negro);
     text-shadow: 0 2px 5px rgba(37, 0, 245, 0.205);
+}
+
+@media (max-width: 768px) { 
+    .experiencia h2 {
+        margin-top: 5rem;
+    }
 }
 
 /* Contenedor de línea de tiempo */
@@ -694,6 +714,7 @@ svg {
 @media (max-width: 768px) { 
     .grid-proyectos {
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        margin-bottom: 3rem;
     }
     
 }
