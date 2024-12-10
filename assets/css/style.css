@@ -39,7 +39,7 @@ body {
 
 @media (max-width: 768px) { 
     body {
-        background-color: var(--blanco);
+        background-color: var(--blancoHover);
     }
 }
 
@@ -689,6 +689,13 @@ svg {
     margin-top: 2rem;
     padding: 0 2rem;
     /* Añade margen interno a los lados */
+}
+
+@media (max-width: 768px) { 
+    .grid-proyectos {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+    
 }
 
 .proyecto {
