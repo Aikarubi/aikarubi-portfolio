@@ -254,18 +254,6 @@ svg {
 }
 
 /* SOBRE MI */
-/*
-@media (min-width: 768px) {
-    .sobre-mi {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 4rem;
-        align-items: center;
-        height: 89rem;
-        padding: 2rem;
-        position: relative;
-    }
-}*/
 
 .boton-volver {
     position: absolute;
@@ -297,16 +285,23 @@ svg {
     height: 100vh
 }
 
+@media (max-width: 768px) {
+    .sobre-mi {
+        padding: 0 0;
+        height: auto;
+    }
+}
+
 /* Contenedor Secundario */
 .sobre-mi__contenedor {
-    width: 80%; /* Mejor uso del espacio */
+    width: 80%;
+    /* Mejor uso del espacio */
     max-width: 1200px;
     display: grid;
     grid-template-rows: auto auto auto;
     grid-template-columns: 1fr;
     gap: 3rem;
     text-align: center;
-
 }
 
 /* Perfil (Foto e Información) */
@@ -314,7 +309,15 @@ svg {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 1.5rem; /* Separación entre foto y título */
+    gap: 1.5rem;
+    /* Separación entre foto y título */
+}
+
+@media (max-width: 768px) {
+    .sobre-mi__perfil {
+        margin-top: 10rem;
+    }
+
 }
 
 .sobre-mi__imagen img {
@@ -323,6 +326,14 @@ svg {
     border-radius: 8%;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     object-fit: cover;
+}
+
+@media (max-width: 768px) {
+    .sobre-mi__imagen img {
+        width: 14rem;
+        height: 12rem;
+    }
+
 }
 
 .sobre-mi__perfil h1 {
@@ -334,6 +345,13 @@ svg {
     text-shadow: 0 2px 5px rgba(37, 0, 245, 0.205);
 }
 
+@media (max-width: 768px) {
+    .sobre-mi__perfil h1 {
+        font-size: 5rem;
+    }
+
+}
+
 /* Descripción */
 .sobre-mi__descripcion p {
     font-size: 1.6rem;
@@ -343,6 +361,13 @@ svg {
     margin: 0 auto;
 }
 
+@media (max-width: 768px) {
+    .sobre-mi__descripcion p {
+        text-align: justify;
+    }
+
+}
+
 /* Intereses y Tecnologías - Distribuidos en Columnas */
 .sobre-mi__informacion {
     display: flex;
@@ -350,9 +375,22 @@ svg {
     gap: 3rem;
 }
 
+@media (max-width: 768px) {
+    .sobre-mi__informacion {
+        display: block;
+    }
+
+}
+
 /* Intereses */
 .sobre-mi__intereses {
     width: 45%;
+}
+
+@media (max-width: 768px) {
+    .sobre-mi__intereses {
+        width: 100%;
+    }
 }
 
 .sobre-mi__intereses h2 {
@@ -365,12 +403,14 @@ svg {
 .sobre-mi__intereses ul {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 1.2rem; /* Separación entre los elementos */
+    gap: 1.2rem;
+    /* Separación entre los elementos */
     list-style: none;
     padding: 0;
 }
 
-.sobre-mi__intereses li, .tecnologias__lista span {
+.sobre-mi__intereses li,
+.tecnologias__lista span {
     font-size: 1.4rem;
     margin-bottom: 0.8rem;
     border: 1px solid rgba(0, 0, 0, 0.1);
@@ -383,6 +423,12 @@ svg {
     width: 45%;
 }
 
+@media (max-width: 768px) {
+    .sobre-mi__tecnologias {
+        width: 100%;
+    }
+}
+
 .sobre-mi__tecnologias h2 {
     font-size: 2.5rem;
     color: var(--negro);
@@ -392,10 +438,10 @@ svg {
 
 .tecnologias__lista {
     display: grid;
-    grid-template-columns: 1fr 1fr; /* Dos columnas por fila */
+    grid-template-columns: 1fr 1fr;
+    /* Dos columnas por fila */
     gap: 1.5rem;
 }
-
 
 
 /* TECNOLOGIAS */
@@ -409,15 +455,6 @@ svg {
     margin-bottom: 1rem;
 }
 
-@media (min-width: 768px) {
-
-    .tecnologias h2,
-    .tecnologias h3 {
-        padding-top: 0;
-        font-size: 3rem !important;
-    }
-}
-
 .tecnologias .contenedor {
     max-width: 1100px;
     height: 100vh;
@@ -426,10 +463,9 @@ svg {
     color: var(--blanco);
 }
 
-@media (min-width: 768px) { 
+@media (max-width: 768px) {
     .tecnologias .contenedor {
-        max-width: 1200px;
-        padding: 3rem;
+        height: auto;
     }
 }
 
@@ -439,13 +475,6 @@ svg {
     gap: 2rem;
     justify-items: center;
     align-items: center;
-}
-
-@media (min-width: 768px) {
-    .grid-tecnologias {
-        grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-        gap: 3rem;
-    }
 }
 
 .tecnologia {
@@ -459,32 +488,16 @@ svg {
     max-width: 150px;
 }
 
-@media (min-width: 768px) {
-    .tecnologia {
-        padding: 2rem;
-        border-radius: 20px;
-        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-        max-width: 180px;
-    }
-}
-
 .tecnologia img {
     max-width: 60px;
     margin-bottom: 1rem;
-}
-
-@media (min-width: 768px) { 
-    .tecnologia img {
-        max-width: 80px;
-        margin-bottom: 1.5rem;
-    }
 }
 
 .tecnologia p {
     font-size: 1.4rem;
 }
 
-@media (min-width: 768px) {
+@media (max-width: 768px) {
     .tecnologia p {
         font-size: 1.6rem;
     }
@@ -498,12 +511,6 @@ svg {
 /* Estilo de separador para cada sección */
 .categoria {
     margin-top: 4rem;
-}
-
-@media (min-width: 768px) {
-    .categoria {
-        margin-top: 5rem;
-    }
 }
 
 .categoria h3 {
@@ -523,11 +530,24 @@ svg {
     transform: translateX(-50%);
 }
 
+@media (max-width: 768px) {
+    .last {
+        margin-bottom: 2rem;
+    }
+}
+
 /* EXPERIENCIA */
 .experiencia {
     padding: 4rem 2rem;
     text-align: center;
     height: 100vh;
+}
+
+@media (max-width: 768px) {
+    .experiencia {
+        height: auto;
+    }
+
 }
 
 .experiencia h2 {
@@ -578,13 +598,13 @@ svg {
 
 /* Títulos y texto del evento */
 .evento h3 {
-    font-size: 2.5rem; 
+    font-size: 2.5rem;
     color: var(--negro);
     margin-bottom: 0.5rem;
 }
 
 .evento p {
-    font-size: 1.5rem; 
+    font-size: 1.5rem;
     color: var(--negro);
     margin-bottom: 1.5rem;
 }
@@ -626,11 +646,11 @@ svg {
         flex-direction: column;
         align-items: center;
     }
-    
+
     .evento {
         width: 100%;
     }
-    
+
     .linea {
         display: none;
     }
@@ -640,36 +660,45 @@ svg {
 #proyectos {
     padding: 2rem;
     text-align: center;
-    max-width: 1200px; /* Limita el ancho de la sección */
-    margin: 0 auto; /* Centra la sección */
+    max-width: 1200px;
+    /* Limita el ancho de la sección */
+    margin: 0 auto;
+    /* Centra la sección */
 }
 
 .grid-proyectos {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); /* Ajusta el tamaño mínimo de las tarjetas */
-    gap: 3rem; /* Más espacio entre proyectos */
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    /* Ajusta el tamaño mínimo de las tarjetas */
+    gap: 3rem;
+    /* Más espacio entre proyectos */
     margin-top: 2rem;
-    padding: 0 2rem; /* Añade margen interno a los lados */
+    padding: 0 2rem;
+    /* Añade margen interno a los lados */
 }
 
 .proyecto {
     background-color: var(--blancoTransparente);
     border-radius: 15px;
     overflow: hidden;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Sombra más notoria */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    /* Sombra más notoria */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    padding: 1rem; /* Añade espacio interno dentro de cada tarjeta */
+    padding: 1rem;
+    /* Añade espacio interno dentro de cada tarjeta */
 }
 
 .proyecto:hover {
     transform: translateY(-8px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25); /* Realza la sombra al hacer hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
+    /* Realza la sombra al hacer hover */
 }
 
 .proyecto img {
     width: 100%;
     height: auto;
-    border-bottom: 2px solid var(--terciario); /* Pequeño detalle decorativo */
+    border-bottom: 2px solid var(--terciario);
+    /* Pequeño detalle decorativo */
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
 }
@@ -685,7 +714,8 @@ svg {
     margin: 0 0 1rem;
     font-size: 1.2rem;
     color: var(--negro);
-    line-height: 1.6; /* Mejor legibilidad */
+    line-height: 1.6;
+    /* Mejor legibilidad */
 }
 
 .tecnologias-usadas {
@@ -693,7 +723,8 @@ svg {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 1rem; /* Más espacio entre etiquetas */
+    gap: 1rem;
+    /* Más espacio entre etiquetas */
 }
 
 .tecnologias-usadas span {
@@ -707,7 +738,8 @@ svg {
 .botones {
     display: flex;
     justify-content: center;
-    gap: 1.5rem; /* Más espacio entre botones */
+    gap: 1.5rem;
+    /* Más espacio entre botones */
     margin-top: 1rem;
 }
 
@@ -723,7 +755,8 @@ svg {
 
 .botones a:hover {
     background-color: var(--terciarioHover);
-    transform: scale(1.05); /* Efecto sutil de aumento */
+    transform: scale(1.05);
+    /* Efecto sutil de aumento */
 }
 
 /*CONTACTO*/
@@ -736,7 +769,7 @@ svg {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh; 
+    min-height: 100vh;
 }
 
 .contact-container {
@@ -758,16 +791,16 @@ svg {
     flex-direction: column;
     justify-content: center;
     color: var(--blanco);
-    font-size: 1.5rem; 
+    font-size: 1.5rem;
 }
 
 .contact-info h2 {
-    font-size: 3.5rem; 
+    font-size: 3.5rem;
     margin-bottom: 2rem;
 }
 
 .contact-info p {
-    font-size: 1.7rem; 
+    font-size: 1.7rem;
     line-height: 1.8;
 }
 
@@ -788,11 +821,11 @@ svg {
 .form-group input,
 .form-group textarea {
     width: 100%;
-    padding: 2rem; 
+    padding: 2rem;
     border: 2px solid var(--blancoHover);
     border-radius: 5px;
     background: none;
-    font-size: 2rem; 
+    font-size: 2rem;
     outline: none;
     color: var(--primario);
 }
@@ -812,15 +845,15 @@ svg {
     pointer-events: none;
 }
 
-.form-group input:focus ~ label,
-.form-group textarea:focus ~ label,
-.form-group input:not(:placeholder-shown) ~ label,
-.form-group textarea:not(:placeholder-shown) ~ label {
+.form-group input:focus~label,
+.form-group textarea:focus~label,
+.form-group input:not(:placeholder-shown)~label,
+.form-group textarea:not(:placeholder-shown)~label {
     top: -0.7rem;
     left: 1rem;
     background: var(--blanco);
     padding: 0 0.5rem;
-    font-size: 1.5rem; 
+    font-size: 1.5rem;
     color: var(--primario);
 }
 
@@ -856,6 +889,6 @@ svg {
     }
 
     .btn-enviar {
-        font-size: 1.8rem; 
+        font-size: 1.8rem;
     }
 }
