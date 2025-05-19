@@ -2,108 +2,163 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proyectos</title>
-    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/assets/css/style.css">
-    <link rel="stylesheet" href="/assets/css/normalize.css">
-    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Proyectos - Nerea Rubio</title>
+    <link rel="icon" href="/favicon.ico" />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/output.css">
+    <style>
+        body {
+            font-family: 'Manrope', sans-serif;
+        }
+    </style>
 </head>
 
-<body>
-    <section id="proyectos">
-        <a href="../index.html" class="boton-volver rs-m">← Volver</a>
-        <h2>Proyectos</h2>
+<body class="bg-[#101728] text-white min-h-screen flex flex-col items-center relative">
 
-        <!-- Contenedor de la rejilla -->
-        <div class="grid-proyectos">
-            <!-- Proyecto 1 -->
-            <div class="proyecto">
-                <img src="/assets/img/novamanga.png" alt="Nova Manga">
-                <h3>Nova Manga</h3>
-                <p>Aplicación web para gestionar y leer mangas en línea, utilizando PHP, MariaDB y Angular.</p>
-                <div class="tecnologias-usadas">
-                    <span>Angular</span> <span>Symfony</span> <span>MariaDB</span>
-                </div>
-                <div class="botones">
-                    <a href="https://github.com/Aikarubi/nova-manga" class="btn-ver-codigo">Ver código</a>
-                    <a href="https://youtu.be/FjjiFQ8UDxQ" class="btn-demo">Ver demo</a>
+    <!-- Fondo degradado -->
+    <div class="absolute inset-0 bg-gradient-to-tr from-[#293D70]/40 to-[#101728]/90 -z-10"></div>
+
+    <main class="text-center px-4 py-20 max-w-6xl w-full">
+        <h1 class="text-3xl md:text-4xl font-bold mb-6">Mis Proyectos</h1>
+        <p class="text-white/70 max-w-xl mx-auto mb-12 text-sm md:text-base">
+            Aquí puedes ver algunos de los proyectos en los que he trabajado. Son parte de mi aprendizaje y crecimiento
+            como desarrolladora.
+        </p>
+
+        <!-- Contenedor de proyectos -->
+        <div class="grid md:grid-cols-2 gap-8">
+            <div
+                class="backdrop-blur-md bg-white/5 border border-white/10 rounded-2xl p-6 text-left shadow-lg hover:shadow-xl transition duration-300">
+                <h2 class="text-xl font-semibold mb-2">Nova Manga</h2>
+                <p class="text-sm text-white/70 mb-4">Aplicación para gestionar una biblioteca de mangas, desarrollada
+                    con Angular, Symfony y MySQL.</p>
+                <div class="flex gap-3">
+                    <a href="https://github.com/Aikarubi/nova-manga" target="_blank"
+                        class="px-4 py-2 rounded-full bg-white/10 hover:bg-white/20 transition text-white text-sm font-medium border border-white/20">
+                        GitHub
+                    </a>
+                    <p class="inline-block px-4 py-2 rounded-xl  bg-white/10 text-white text-sm font-medium border border-white/20">Proyecto Final de Ciclo</p>
                 </div>
             </div>
 
-            <!-- Proyecto 2 -->
-            <div class="proyecto">
-                <img src="/assets/img/centecoProyecto.png" alt="Centeco">
-                <h3>Centeco</h3>
-                <p>Desarrollo de la web corporativa con WordPress y PHP. Diseño moderno y optimizado para SEO.</p>
-                <div class="tecnologias-usadas">
-                    <span>WordPress</span> <span>PHP</span>
-                </div>
-                <div class="botones">
-                    <a href="http://web.centeco.es" class="btn-ver-sitio">Ver sitio web</a>
-                </div>
-            </div>
-
-            <!-- Proyecto 3 -->
-            <div class="proyecto">
-                <img src="/assets/img/blog.png" alt="Blog de Café">
-                <h3>Blog de Café</h3>
-                <p>Blog simple creado con HTML y CSS para practicar posicionamiento con Grid y Flexbox.</p>
-                <div class="tecnologias-usadas">
-                    <span>HTML</span> <span>CSS</span>
-                </div>
-                <div class="botones">
-                    <a href="https://github.com/Aikarubi/blog-de-cafe" class="btn-ver-codigo">Ver código</a>
-                    <a href="https://blogdecafe-aikarubi.netlify.app/" class="btn-ver-sitio">Ver sitio web</a>
+            <div
+                class="backdrop-blur-md bg-white/5 border border-white/10 rounded-2xl p-6 text-left shadow-lg hover:shadow-xl transition duration-300">
+                <h2 class="text-xl font-semibold mb-2">API JDM</h2>
+                <p class="text-sm text-white/70 mb-4">Mi primera API de coches JDM, desarrollada con Angular, Node.JS,
+                    Express y MongoDB.</p>
+                <div class="flex gap-3">
+                    <a href="https://github.com/Aikarubi/JDMCars-api" target="_blank"
+                        class="px-4 py-2 rounded-full bg-white/10 hover:bg-white/20 transition text-white text-sm font-medium border border-white/20">
+                        GitHub
+                    </a>
+                    <a href="https://jdm-api.netlify.app/" target="_blank"
+                        class="px-4 py-2 rounded-full bg-secondary hover:bg-secondary-dark transition text-white text-sm font-medium">
+                        Ver Web
+                    </a>
                 </div>
             </div>
 
-            <!-- Proyecto 4 -->
-            <div class="proyecto">
-                <img src="/assets/img/freelance.png" alt="Web Freelance">
-                <h3>Web Freelance</h3>
-                <p>Web estilo freelance creada con HTML y CSS para practicar posicionamiento con Grid y Flexbox.</p>
-                <div class="tecnologias-usadas">
-                    <span>HTML</span> <span>CSS</span>
-                </div>
-                <div class="botones">
-                    <a href="https://github.com/Aikarubi/DesingFreelancer" class="btn-ver-codigo">Ver código</a>
-                    <a href="https://desingfreelancer-aikarubi.netlify.app/" class="btn-ver-sitio">Ver sitio web</a>
-                </div>
-            </div>
-
-            <!-- Proyecto 5 -->
-            <div class="proyecto">
-                <img src="/assets/img/festival.png" alt="Festival de Música">
-                <h3>Festival de Música</h3>
-                <p>Web sobre un festival de música creado con HTML y SCSS para practicar estructuración de archivos con Gulp.js.</p>
-                <div class="tecnologias-usadas">
-                    <span>HTML</span> <span>SCSS</span> <span>JavaScript</span> <span>Gulp.js</span>
-                </div>
-                <div class="botones">
-                    <a href="https://github.com/Aikarubi/festival-de-musica" class="btn-ver-codigo">Ver código</a>
-                    <a href="https://festival-de-musica-aikarubi.netlify.app/" class="btn-ver-sitio">Ver sitio web</a>
+            <div
+                class="backdrop-blur-md bg-white/5 border border-white/10 rounded-2xl p-6 text-left shadow-lg hover:shadow-xl transition duration-300">
+                <h2 class="text-xl font-semibold mb-2">Blog de Café</h2>
+                <p class="text-sm text-white/70 mb-4">Sitio web estático de blog, hecho con HTML, CSS para
+                    practicar diseño y estructura.</p>
+                <div class="flex gap-3">
+                    <a href="https://github.com/Aikarubi/blog-de-cafe" target="_blank"
+                        class="px-4 py-2 rounded-full bg-white/10 hover:bg-white/20 transition text-white text-sm font-medium border border-white/20">
+                        GitHub
+                    </a>
+                    <a href="https://blogdecafe-aikarubi.netlify.app/" target="_blank"
+                        class="inline-block px-4 py-2 rounded-full bg-tertiary hover:bg-tertiary-dark transition text-white text-sm">Ver
+                        Web</a>
                 </div>
             </div>
 
-            <!-- Proyecto 6 -->
-            <div class="proyecto">
-                <img src="/assets/img/store.png" alt="Frontend Store">
-                <h3>Frontend Store</h3>
-                <p>Web de tienda online creada con HTML y CSS para practicar posicionamiento con Grid y Flexbox.</p>
-                <div class="tecnologias-usadas">
-                    <span>HTML</span> <span>CSS</span>
-                </div>
-                <div class="botones">
-                    <a href="https://github.com/Aikarubi/FrontendStore" class="btn-ver-codigo">Ver código</a>
-                    <a href="https://github.com/Aikarubi/FrontendStore" class="btn-ver-sitio">Ver sitio web</a>
+            <div
+                class="backdrop-blur-md bg-white/5 border border-white/10 rounded-2xl p-6 text-left shadow-lg hover:shadow-xl transition duration-300">
+                <h2 class="text-xl font-semibold mb-2">Frontend Store</h2>
+                <p class="text-sm text-white/70 mb-4">Web sobre una tienda de camisetas. Desarrollado con HTML y CSS</p>
+                <div class="flex gap-3">
+                    <a href="https://github.com/Aikarubi/FrontendStore" target="_blank"
+                        class="px-4 py-2 rounded-full bg-white/10 hover:bg-white/20 transition text-white text-sm font-medium border border-white/20">
+                        GitHub
+                    </a>
+                    <a href="https://frontendstore-aikarubi.netlify.app/" target="_blank"
+                        class="inline-block px-4 py-2 rounded-full bg-tertiary hover:bg-tertiary-dark transition text-white text-sm">Ver
+                        Web</a>
                 </div>
             </div>
-        </div>
-    </section>
 
-    <script src="/assets/js/main.js"></script>
+            <div
+                class="backdrop-blur-md bg-white/5 border border-white/10 rounded-2xl p-6 text-left shadow-lg hover:shadow-xl transition duration-300">
+                <h2 class="text-xl font-semibold mb-2">Festival de Música</h2>
+                <p class="text-sm text-white/70 mb-4">Web sobre un festival de música. Desarrollado con HTML y SCSS para
+                    practicar estructuración de archivos con Gulp.js</p>
+                <div class="flex gap-3">
+                    <a href="https://github.com/Aikarubi/festival-de-musica" target="_blank"
+                        class="px-4 py-2 rounded-full bg-white/10 hover:bg-white/20 transition text-white text-sm font-medium border border-white/20">
+                        GitHub
+                    </a>
+                    <a href="https://festival-de-musica-aikarubi.netlify.app/" target="_blank"
+                        class="inline-block px-4 py-2 rounded-full bg-secondary hover:bg-secondary-dark transition text-white text-sm">Ver
+                        Web</a>
+                </div>
+            </div>
+
+            <div
+                class="backdrop-blur-md bg-white/5 border border-white/10 rounded-2xl p-6 text-left shadow-lg hover:shadow-xl transition duration-300">
+                <h2 class="text-xl font-semibold mb-2">Web Freelance</h2>
+                <p class="text-sm text-white/70 mb-4">Web estilo freelance básico. Desarrollado con HTML y CSS</p>
+                <div class="flex gap-3">
+                    <a href="https://github.com/Aikarubi/DesingFreelancer" target="_blank"
+                        class="px-4 py-2 rounded-full bg-white/10 hover:bg-white/20 transition text-white text-sm font-medium border border-white/20">
+                        GitHub
+                    </a>
+                    <a href="https://desingfreelancer-aikarubi.netlify.app/" target="_blank"
+                        class="inline-block px-4 py-2 rounded-full bg-secondary hover:bg-secondary-dark transition text-white text-sm">Ver
+                        Web</a>
+                </div>
+            </div>
+
+            <div
+                class="backdrop-blur-md bg-white/5 border border-white/10 rounded-2xl p-6 text-left shadow-lg hover:shadow-xl transition duration-300">
+                <h2 class="text-xl font-semibold mb-2">Wild Rift Analyzer</h2>
+                <p class="text-sm text-white/70 mb-4">Diseño Web sobre un analizador inteligente de partidas de Wild
+                    Rift. Desarrollado con Angular.</p>
+                <div class="flex gap-3">
+                    <a href="https://github.com/Aikarubi/WRAnalyzer-front" target="_blank"
+                        class="px-4 py-2 rounded-full bg-white/10 hover:bg-white/20 transition text-white text-sm font-medium border border-white/20">
+                        GitHub
+                    </a>
+                </div>
+
+            </div>
+
+    </main>
+
+    <!-- Botón para volver -->
+    <div class=" relative z-10 mb-50">
+        <a href="../index.html"
+            class="px-6 py-3 rounded-full bg-white/10 hover:bg-white/20 transition text-white font-medium text-sm border border-white/20">
+            ← Volver al inicio
+        </a>
+    </div>
+
+    <!-- Wave inferior -->
+    <svg class="absolute bottom-0 left-0 w-full" viewBox="0 0 1440 160" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+            <linearGradient id="wave-gradient" x1="0" x2="0" y1="1" y2="0">
+                <stop stop-color="#9340FF" offset="0%"></stop>
+                <stop stop-color="#3ADB93" offset="100%"></stop>
+            </linearGradient>
+        </defs>
+        <path fill="url(#wave-gradient)"
+            d="M0,32L30,48C60,64,120,96,180,112C240,128,300,128,360,125.3C420,123,480,117,540,106.7C600,96,660,80,720,82.7C780,85,840,107,900,96C960,85,1020,43,1080,21.3C1140,0,1200,0,1260,24C1320,48,1380,96,1440,112V160H0Z">
+        </path>
+    </svg>
+
 </body>
 
 </html>

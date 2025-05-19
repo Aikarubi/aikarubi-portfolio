@@ -2,42 +2,85 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto</title>
-    <link rel="icon" type="image/x-icon" href="../favicon.ico">
-    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/assets/css/style.css">
-    <link rel="stylesheet" href="/assets/css/normalize.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contacto - Nerea Rubio</title>
+  <link rel="icon" href="/favicon.ico" />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../assets/output.css" />
+  <style>
+    body {
+      font-family: 'Manrope', sans-serif;
+    }
+  </style>
 </head>
-<body style="background-image: linear-gradient(to top, lightgrey 0%, lightgrey 1%, #e0e0e0 26%, #efefef 48%, #d9d9d9 75%, #bcbcbc 100%);">
-    <section id="contacto">
-        <a href="../index.html" class="boton-volver rs-m">← Volver</a>
-        <div class="contact-container">
-            <div class="contact-info">
-                <h2>Contáctame</h2>
-                <p>Si tienes alguna pregunta o estás interesado en trabajar conmigo, no dudes en enviarme un mensaje. ¡Estoy disponible para nuevos proyectos!</p>
-            </div>
-    
-            <form action="https://formspree.io/f/mdknrqeg" method="POST" class="contact-form" id="contactForm">
-                <div class="form-group">
-                    <input type="text" id="nombre" name="nombre" required>
-                    <label for="nombre">Nombre</label>
-                </div>
-    
-                <div class="form-group">
-                    <input type="email" id="email" name="email" required>
-                    <label for="email">Correo Electrónico</label>
-                </div>
-    
-                <div class="form-group">
-                    <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
-                    <label for="mensaje">Mensaje</label>
-                </div>
-    
-                <button type="submit" class="btn-enviar">Enviar mensaje</button>
-            </form>
-        </div>
-    </section>
-    
+
+<body class="bg-[#101728] text-white min-h-screen flex flex-col items-center justify-center relative overflow-hidden">
+
+  <!-- Fondo degradado -->
+  <div class="absolute inset-0 bg-gradient-to-tr from-[#293D70]/40 to-[#101728]/90 -z-10"></div>
+
+  <main class="w-full px-4 text-center max-w-xl mt-20 mb-20">
+    <h1 class="text-3xl sm:text-4xl font-bold mb-6">Contáctame</h1>
+    <p class="text-white/70 mb-8">¿Tienes un proyecto o simplemente quieres saludar? Estoy encantada de leerte.</p>
+
+    <form action="https://formspree.io/f/mdknrqeg" method="POST" class="space-y-4">
+      <input
+        type="text"
+        name="nombre"
+        placeholder="Tu nombre"
+        class="w-full px-4 py-3 bg-white/10 text-white placeholder-white/50 border border-white/20 rounded-xl focus:outline-none focus:ring-2 focus:ring-[#9340FF]"
+        required
+      />
+
+      <input
+        type="email"
+        name="email"
+        placeholder="Tu correo"
+        class="w-full px-4 py-3 bg-white/10 text-white placeholder-white/50 border border-white/20 rounded-xl focus:outline-none focus:ring-2 focus:ring-[#9340FF]"
+        required
+      />
+
+      <textarea
+        name="mensaje"
+        rows="5"
+        placeholder="Escribe tu mensaje..."
+        class="w-full px-4 py-3 bg-white/10 text-white placeholder-white/50 border border-white/20 rounded-xl focus:outline-none focus:ring-2 focus:ring-[#9340FF]"
+        required
+      ></textarea>
+
+      <!-- Botones enviar y volver alineados -->
+      <div class="flex gap-4 mt-2">
+        <button
+          type="submit"
+          class="flex-1 bg-gradient-to-r from-secondary to-tertiary hover:brightness-110 transition px-6 py-3 rounded-xl text-white font-semibold"
+        >
+          Enviar mensaje
+        </button>
+        <button
+          type="button"
+          onclick="window.location.href='../index.html'"
+          class="flex-1 border border-white/20 hover:bg-white/10 transition px-6 py-3 rounded-xl text-white font-semibold"
+        >
+          ← Volver
+        </button>
+      </div>
+    </form>
+  </main>
+
+  <!-- SVG Wave -->
+  <svg class="absolute bottom-0 left-0 w-full" viewBox="0 0 1440 160" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <linearGradient id="wave-gradient" x1="0" x2="0" y1="1" y2="0">
+        <stop stop-color="#9340FF" offset="0%"></stop>
+        <stop stop-color="#3ADB93" offset="100%"></stop>
+      </linearGradient>
+    </defs>
+    <path fill="url(#wave-gradient)"
+      d="M0,32L30,48C60,64,120,96,180,112C240,128,300,128,360,125.3C420,123,480,117,540,106.7C600,96,660,80,720,82.7C780,85,840,107,900,96C960,85,1020,43,1080,21.3C1140,0,1200,0,1260,24C1320,48,1380,96,1440,112V160H0Z">
+    </path>
+  </svg>
+
 </body>
+
+</html>
