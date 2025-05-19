@@ -34,6 +34,4 @@ Para ver mi portfolio en vivo, visita: [https://portfolio-aikarubi.netlify.app/]
 Algunas mejoras y características planeadas para el futuro:
 
 - [ ] Implementar servicio de correo con PHP.
-- [ ] Rediseñar algunas secciones para mejorar la estructura y muestra de información.
-- [ ] Optimización y SEO.
 
